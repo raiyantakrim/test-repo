@@ -5,6 +5,10 @@
           box-sizing: border-box;
 }
 
+.hide {
+  display: none;
+}
+
 small {
   margin-top: 5px;
   color: red;
@@ -105,7 +109,7 @@ small {
   transition: all 0.5s ease;
 }
 
-.wrapper .loginMain .secondWrapper .formsHolder .inputSection .activeLabel {
+.wrapper .loginMain .secondWrapper .formsHolder .inputSection .activeLabel, .wrapper .loginMain .secondWrapper .formsHolder .inputSection .activeLabelFilled {
   top: 2px;
   background: #FFFFFF;
   color: #233F8F;
@@ -125,7 +129,7 @@ small {
   transition: all 0.5s ease;
 }
 
-.wrapper .loginMain .secondWrapper .formsHolder .inputSection .activeInputField {
+.wrapper .loginMain .secondWrapper .formsHolder .inputSection .activeInputField, .wrapper .loginMain .secondWrapper .formsHolder .inputSection .activeInputFieldFilled {
   border: 1px solid #233F8F;
 }
 
@@ -141,6 +145,21 @@ small {
   position: absolute;
   right: 0;
   bottom: 100px;
+}
+
+.wrapper .loginMain .secondWrapper .formsHolder .loginForm .passwordInputSection {
+  position: relative;
+}
+
+.wrapper .loginMain .secondWrapper .formsHolder .loginForm .passwordInputSection .passwordInputField {
+  padding-right: 40px;
+}
+
+.wrapper .loginMain .secondWrapper .formsHolder .loginForm .passwordInputSection .eye {
+  position: absolute;
+  right: 5px;
+  top: 20px;
+  cursor: pointer;
 }
 
 .wrapper .loginMain .secondWrapper .formsHolder .loginFooter {
@@ -164,4 +183,5 @@ small {
   background: #233F8F;
   color: #FFFFFF;
   border-radius: 25px;
+  cursor: pointer;
 }

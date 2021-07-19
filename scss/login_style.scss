@@ -10,7 +10,9 @@ $borderColor: #767687;
 
 
 //--------- common styles-----------------
-
+.hide{
+    display: none;
+}
 small {
     margin-top: 5px;
     color: red;
@@ -85,15 +87,15 @@ small {
                         transition: all 0.5s ease;
                     }
 
-                    .activeLabel {
+                    .activeLabel,.activeLabelFilled {
                         top: 2px;
                         background: $secondaryColor;
                         color: $primaryColor;
                         font-size: 14px;
 
                     }
-
-                    .inputField {
+                   
+                    .inputField{
                         height: 40px;
                         width: 100%;
                         flex-shrink: 0;
@@ -104,7 +106,7 @@ small {
                         transition: all 0.5s ease;
                     }
 
-                    .activeInputField {
+                    .activeInputField, .activeInputFieldFilled{
                         border: 1px solid $primaryColor;
                     }
                 }
@@ -118,6 +120,18 @@ small {
                         right: 0;
                         bottom: 100px;
 
+                    }
+                    .passwordInputSection {
+                        position: relative;
+                        .passwordInputField{
+                            padding-right: 40px;
+                        }
+                        .eye{
+                            position: absolute;
+                            right: 5px;
+                            top: 20px;
+                            cursor: pointer;
+                        }
                     }
                 }
 
@@ -135,6 +149,7 @@ small {
                         background: $primaryColor;
                         color: $secondaryColor;
                         border-radius: 25px;
+                        cursor: pointer;
                     }
                 }
 
